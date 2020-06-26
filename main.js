@@ -23,7 +23,26 @@ $(document).ready(function() {
         console.log(risultatoRichiesta);
         // Stampo a schermo l'array dei dischi ottenuti tramite l'apposita funzione
         stampaDischi(risultatoRichiesta);
+
+        // SELECT
+
+        $(document).on('click', '.confirm',
+          function(){
+
+            var valoreSelect = $('select').val();
+
+            console.log(valoreSelect);
+
+
+
+
+
+          }
+        );
+
+
       },
+
 
       error: function(){
         alert('Qualcosa è andato storto');
@@ -31,6 +50,7 @@ $(document).ready(function() {
       }
     }
   );
+
 
 
   // FUNZIONE PER STAMPARE I DISCHI inserendo il template handlebars
